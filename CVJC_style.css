@@ -1,0 +1,565 @@
+/* =====================================================
+   CSS
+   ===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   BODY
+   ===================================================== */
+
+body {
+  /* Fonte utilizada na página */
+  font-family: Arial, sans-serif;
+
+  /* Cor de fundo da página */
+  background-color: #f4f7fb;
+
+  /* Cor padrão dos textos */
+  color: #1f2937;
+
+  /* Espaçamento entre linhas */
+  line-height: 1.6;
+}
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+/*
+Classe utilizada no HEADER.
+
+Responsável pela área superior da página.
+*/
+.cabecalho {
+  /* Cor de fundo */
+  background-color: #0f172a;
+
+  /* Cor dos textos */
+  color: white;
+
+  /* Espaçamento interno */
+  padding: 30px 8%;
+
+  /* Centraliza os textos */
+  text-align: center;
+}
+
+/*
+Título principal do cabeçalho
+*/
+.cabecalho h1 {
+  /* Tamanho da fonte */
+  font-size: 36px;
+
+  /* Espaço abaixo do título */
+  margin-bottom: 10px;
+}
+
+/*
+Subtítulo do cabeçalho
+*/
+.cabecalho p {
+  margin-bottom: 20px;
+}
+
+/* =====================================================
+   MENU
+   ===================================================== */
+
+/*
+Links do menu de navegação.
+*/
+.menu a {
+  /* Cor do link */
+  color: white;
+
+  /* Remove o sublinhado */
+  text-decoration: none;
+
+  /* Espaçamento entre os links */
+  margin: 0 10px;
+
+  /* Texto em negrito */
+  font-weight: bold;
+}
+
+/*
+Pseudo-classe hover.
+
+É aplicada quando o mouse passa sobre o elemento.
+*/
+.menu a:hover {
+  color: #38bdf8;
+}
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+/*
+Hero é a primeira seção visual da página.
+
+Contém:
+- Foto
+- Texto principal
+- Botão
+*/
+.hero {
+  /* Ativa o Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  /* Alinha os itens verticalmente */
+  align-items: center;
+
+  /* Espaço entre foto e texto */
+  gap: 40px;
+
+  /* Espaçamento interno */
+  padding: 70px 8%;
+
+  /* Cor de fundo */
+  background-color: #e0f2fe;
+}
+
+/* =====================================================
+   FOTO DE PERFIL
+   ===================================================== */
+
+/*
+Imagem principal do currículo.
+*/
+.foto-perfil {
+  /* Largura */
+  width: 250px;
+
+  /* Altura */
+  height: 250px;
+
+  /* Torna a imagem circular */
+  border-radius: 50%;
+
+  /* Ajusta o corte da imagem */
+  object-fit: cover;
+
+  /* Borda branca */
+  border: 6px solid white;
+}
+
+/* =====================================================
+   TÍTULO PRINCIPAL DA HERO
+   ===================================================== */
+
+.hero h2 {
+  font-size: 36px;
+
+  color: #0f172a;
+
+  margin-bottom: 20px;
+}
+
+/*
+Parágrafos da seção inicial.
+*/
+.hero p {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+}
+
+/* =====================================================
+   BOTÃO
+   ===================================================== */
+
+/*
+Botão principal da página.
+*/
+.botao {
+  /* Permite comportamentos de bloco */
+  display: inline-block;
+
+  /* Cor de fundo */
+  background-color: #0284c7;
+
+  /* Cor do texto */
+  color: white;
+
+  /* Espaçamento interno */
+  padding: 14px 28px;
+
+  /* Bordas arredondadas */
+  border-radius: 8px;
+
+  /* Remove sublinhado */
+  text-decoration: none;
+
+  /* Negrito */
+  font-weight: bold;
+
+  margin-top: 15px;
+}
+
+/*
+Efeito ao passar o mouse.
+*/
+.botao:hover {
+  background-color: #0369a1;
+}
+
+/* =====================================================
+   SEÇÕES DA PÁGINA
+   ===================================================== */
+
+/*
+Classe reutilizada em várias seções.
+*/
+.secao {
+  padding: 60px 8%;
+
+  background-color: white;
+}
+
+/*
+Títulos das seções.
+*/
+.secao h2 {
+  text-align: center;
+
+  color: #0f172a;
+
+  font-size: 32px;
+
+  margin-bottom: 30px;
+}
+
+/*
+Parágrafos das seções.
+*/
+.secao p {
+  max-width: 900px;
+
+  margin: 0 auto 15px auto;
+}
+
+/* =====================================================
+   FUNDO ALTERNATIVO
+   ===================================================== */
+
+.destaque {
+  background-color: #f8fafc;
+}
+
+/* =====================================================
+   GRID DE HABILIDADES
+   ===================================================== */
+
+.lista-cards {
+  display: grid;
+
+  /* 4 colunas iguais */
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+
+  list-style: none;
+}
+
+/*
+Cada item da lista.
+*/
+.lista-cards li {
+  background-color: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   CARDS DE PROJETOS)
+   ===================================================== */
+
+.secao-projetos {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.secao-projetos h2 {
+  color: #070707;
+  margin-bottom: 20px;
+}
+
+.secao-projetos .subtitulo {
+  color: #040404;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.card-projeto {
+  background-color: #f8fafc;
+  padding: 25px;
+  /* Barra lateral colorida azul */
+  border-left: 5px solid #0284c7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-projeto h3 {
+  color: #0284c7;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.tag-tecnologia {
+  display: inline-block;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.card-projeto p {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 5px; /* Ajustado para fechar o card de uma forma que achei elegante */
+}
+
+.badges span {
+  background-color: #e2e8f0;
+  color: #334155;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* =====================================================
+   TABELA
+   ===================================================== */
+
+/*
+Tabela completa.
+*/
+table {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  
+  border-collapse: collapse;
+
+  background-color: white;
+}
+
+/*
+Cabeçalho da tabela.
+*/
+th {
+  background-color: #0284c7;
+
+  color: white;
+
+  padding: 15px;
+}
+
+/*
+Células da tabela.
+*/
+td {
+  padding: 15px;
+
+  border: 1px solid #ddd;
+}
+/* Ativa as regras apenas na tela do celular */
+@media (max-width: 480px) {
+  
+  /* Transforma a tabela, o corpo e as linhas em blocos de largura total */
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cria um espaçamento entre cada card para eles não colarem um no outro */
+  td {
+    margin-bottom: 15px; /* Empurra o próximo card para baixo */
+    background-color: white;
+    
+    /* Mantém os cantos arredondados e a sombra do seu layout */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Opcional: Remove o espaçamento do último item para não sobrar espaço no fim */
+  td:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Esconde o cabeçalho azul (th) no celular para não quebrar a estrutura */
+  th {
+    display: none;
+  }
+}
+/* =====================================================
+   AJUSTE GLOBAL DE FONTES (TÍTULOS E SUBTÍTULOS)
+   ===================================================== */
+
+/* Título principal do site (Seção Hero / Abertura) */
+h1 {
+  font-size: 3rem !important;
+}
+
+/* Títulos de todas as seções (Projetos, Formação, Hobbies, etc.) */
+h2 {
+  font-size: 2.2rem !important; /* Aumenta o tamanho padrão de todos os h2 */
+  margin-bottom: 15px;
+}
+
+/* Títulos internos dos cards (Nome dos projetos, etc.) */
+h3 {
+  font-size: 1.5rem !important; /* Melhora a leitura dentro dos blocos */
+}
+
+/* Todos os subtítulos/parágrafos de descrição das seções */
+.subtitulo {
+  font-size: 1.15rem !important;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   ESTRUTURA FLEX PARA TÍTULO E SUBTÍTULO
+   ===================================================== */
+
+/* Transforma apenas os blocos de texto em containers Flexbox */
+#hobbies h2,
+#redes-sociais h2,
+#hobbies .subtitulo,
+#redes-sociais .subtitulo {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Ajusta a margem inferior dos subtítulos flex */
+#hobbies .subtitulo,
+#redes-sociais .subtitulo {
+  margin-bottom: 25px !important;
+  max-width: 800px; /* Limita o tamanho do parágrafo para melhor leitura */
+}
+
+/* =====================================================
+   ESTILIZAÇÃO DOS COMPONENTES DE HOBBIES E REDE SOCIAL
+   ===================================================== */
+
+/* Configura a lista de hobbies */
+.lista-hobbies {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 15px;
+  padding: 0 !important;
+  margin: 15px auto 0 auto !important;
+  list-style: none !important;
+  width: 100% !important;
+}
+
+/* Itens da lista de Hobbies */
+.lista-hobbies li {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1f2937;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Alinhamento do botão do Instagram */
+.container-instagram {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-top: 15px !important;
+}
+
+/* Botão com o gradiente oficial do Instagram */
+.btn-instagram {
+  display: inline-block;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Configuração do fundo para a seção de contato */
+.secao-contato, #contato {
+  background-color: #e0f2fe; 
+  padding: 40px 20px;       
+  border-radius: 8px;       
+  text-align: center;       
+}
+
+/* =====================================================
+   RODAPÉ 
+   ===================================================== */
+
+/* Alinha o container do rodapé e todo o seu conteúdo no meio da tela */
+footer,
+.rodape,
+#rodape {
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: center t;
+  text-align: center ;
+  width: 100% ;
+  padding: 30px 20px ;
+  background-color: #0f172a ;
+  color: white ;
+}
+
+
+
